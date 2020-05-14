@@ -1,0 +1,15 @@
+.wrapper{
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+
+.item{
+	min-height: 280px;
+}
+
+.item h4{
+	font-weight: lighter;
+	font-size: 15px;
+	padding-top: 12px;
+}

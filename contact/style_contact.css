@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Proxima Nova Alt';
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Light.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Regular Italic.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Bold.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Regular.otf');
+ }
+
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'proxima nova alt';
+	background-color: #F8F7F8;
+}
+
+.message{
+	padding:20px;
+	background-color: white;
+	display: flex;
+	max-width: 100%;
+}
+
+.box{
+	position: relative;
+	padding:20px;
+	display: flex;
+	min-width: 86%;
+	left: 5.6%;
+	margin-top: 8px;
+}
+
+/* styling content box */
+
+.box .content{
+	padding-right: 40px;
+	color: #262C3B;
+	width: 100%;
+}
+
+.box .content .keywords{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	line-height: 28px;
+	font-size: 14px;
+	background-color: #F8F7F8;
+	box-shadow: 0px 1px 2px -1px #262C3B;
+}
+ .items{
+	margin-left: 14px;	
+}
+
+.box .content h1{
+	padding-bottom: 16px;
+	font-size: 28px;
+}
+
+.box .content .field2{
+	padding-bottom: 200px;
+	font-style: italic;
+	margin-bottom: 18px;
+}
+
+.box .content .field{
+	margin-bottom: 18px;
+	font-style: italic;
+
+}
+
+.content #submit{
+	font-size: 14px;
+}
+
+/* upload file */
+
+.file-input-container{
+	background-color: white;
+	border: 0.5px solid #ccc;
+	padding: 8px 0px 8px 6px;
+	border-radius: 2px;
+	margin: 8px 0px 10px 0px;
+}
+
+.file-input{
+  visibility: hidden;
+}
+
+.file-input-container .upload{
+	padding-left: 6px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.file-input-container .upload:hover{
+	color:#00BEB7;
+}
+
+.file-input-container .upload, .material-icons{
+	display: flex;
+	justify-content:space-between;
+	margin: 0px 6px 0px 2px;
+}
+
+.file-input-container .upload{
+	margin-top: 3px;
+}
+
+/* back button */
+
+.back button{
+	padding: 6px 20px 6px 20px;
+	margin-right: -100px;
+	border: 0.5px solid #262C3B;
+	background-color: #F8F7F8;
+	font-size: 14px;
+}
+
+.back button:hover{
+	color: white;
+	background-color: #00BEB7;
+}
+
+/* photo */
+
+.box .photo {
+	width: 500px; 
+	padding: 15px;
+	margin-top: 45px;
+	margin-right: 6%;
+}
+
+.box .photo img{
+	max-width: 86%;	
+	border-radius: 3px;
+	
+}
+
+
+
+
+
+
+

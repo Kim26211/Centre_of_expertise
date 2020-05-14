@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'Proxima Nova Alt';
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Light.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Regular Italic.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Bold.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Regular.otf');
+ }
+
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'proxima nova alt';
+	background-color: #F8F7F8;
+}
+
+.article{
+	padding:20px;
+	background-color: white;
+	display: flex;
+	max-width: 100%;
+}
+
+.box{
+	position: relative;
+	padding:20px;
+	display: flex;
+	max-width: 86%;
+	left: 5.6%;
+	margin-top: 8px;
+}
+
+/* styling breadcrumbs */
+
+.breadcrumbs ul li{
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  color: #262C3B;
+  display: inline;
+  padding: 4px 26px 4px 0px;
+  font-size: 15px;
+}
+
+.breadcrubms a {
+	text-decoration: none;
+	color: #262C3B;
+}
+
+.breadcrumbs a:hover{
+  color: #00BEB7;
+  text-decoration: underline;
+}
+
+.breadcrumbs .current3{
+	text-decoration: underline;
+}
+
+/* styling content box */
+
+.box .content{
+	padding-right: 56px;
+}
+
+.box .content h1{
+	font-size: 28px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.box .content h4{
+	font-style: italic;
+	font-size: 14px;
+	font-weight: lighter;
+	line-height: 22px;
+}
+
+.box .content .keyword{
+	background-color: #F8F7F8;
+	padding: 6px 16px 6px 16px;
+	margin: 0px 6px 30px 0px;
+	font-size: 13px;
+	font-style: italic;
+	border-radius: 3px;
+}
+
+.box .content .keyword:hover{
+	background-color: white;
+}
+
+.box .content p{
+	font-size: 15px;
+	line-height: 22px;
+	padding-bottom: 20px;
+}
+
+/* link button */
+
+.content form button{
+  background-color: #00BEB7;
+  display: table;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  padding: 16px 20px;
+  margin: 14px 0px 5px 0px;
+  border:none;
+  border-radius: 3px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+
+.content form button:hover{
+  box-shadow: 0px 1px 3px -1px #262C3B;
+  background-color: #05CEC7;
+}
+
+/* photo */
+
+.box .photo1 {
+	width: 100%; 
+	padding: 15px;
+	margin-top: 45px;
+	margin-right: -12%;
+}
+
+.box .photo1 img{
+	max-width: 75%;	
+	border-radius: 3px;
+}
+
+.box .photo1 .caption{
+	font-size: 14px;
+	padding-top: 10px;
+	font-style: italic;
+}
+
+.box .photo2 {
+	width: 160%; 
+	padding: 15px;
+	margin-top: 45px;
+	margin-right: -2%;
+}
+
+.box .photo2 img{
+	max-width: 100%;	
+	border-radius: 3px;
+}
+
+/* back button */
+
+.back button{
+	padding: 6px 20px 6px 20px;
+	margin-right: -100px;
+	border: 0.5px solid #262C3B;
+	background-color: #F8F7F8;
+	font-size: 14px;
+	width: 100px;
+}
+
+.back button:hover{
+	color: white;
+	background-color: #00BEB7;
+}
+
+
+/* back button - artikel zonder foto */
+
+.back2 button{
+	padding: 6px 20px 6px 20px;
+	width: 100px;
+	border: 0.5px solid #262C3B;
+	background-color: #F8F7F8;
+	font-size: 14px;
+}
+
+.back2 button:hover{
+	color: white;
+	background-color: #00BEB7;
+}
+
+
+
+
+
+
+
+

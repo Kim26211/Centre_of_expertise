@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title>Centre of Expertise</title>
+			<link rel="stylesheet" type="text/css" href="../style_header.css">
+			<link rel="stylesheet" type="text/css" href="../style_navigation.css">
+			<link rel="stylesheet" type="text/css" href="../search_box.css">
+			<link rel="stylesheet" type="text/css" href="../log_in.css">
+			<link rel="stylesheet" type="text/css" href="../footer.css">
+			<link rel="stylesheet" type="text/css" href="style_artikel.css">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		</head>
+		<body>
+
+			<!-- HEADER ------------------------------------->
+
+			<div class="header"> 
+				<div class="inner_header">
+					<div class="logo_left">
+						<img src="../logo.png">
+					</div>
+
+					<div class="logo_right">
+						<a href="https://www.dehaagsehogeschool.nl/onderzoek/onderzoekplatforms" target="_blank"><img src="../logo_HHS.png" alt="De Haagse Hogeschool"></a>
+					</div>
+
+					<div class="login">
+						<button id="header-button" onclick="document.getElementById('login').style.display='block'" style="width:auto;"><i class="material-icons">person</i>LOG IN</button>
+
+					      <div id="login" class="modal">
+					        
+					        <form class="modal-content animate" action="/action_page.php">
+					          <div class="head-container">
+					           <h5>Log in via je intranet account.</br><span class="tekst2">Vul je gegevens hieronder in.</span></h5>
+					           <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+					          </div>
+					          <div class="container">
+					            <label for="uname"><b>GEBRUIKERSNAAM</b></label>
+					            <input class="placeholder" type="text" placeholder="someone@example.com" name="uname" required>
+					            <label for="psw"><b>WACHTWOORD</b></label>
+					            <input class="placeholder" type="password" placeholder="enter your password" name="psw" required>   
+					            <button id="submit" type="submit">LOG IN</button>
+					           <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Annuleren</button>
+					          </div>
+
+					          <div class="container2">
+					            <button type="button" onclick="document.getElementById('beheerder').style.display='block'" class="beheerder">Ik ben beheerder</button>
+					          </div>
+					        </form>
+					      </div>
+					</div>
+
+					<div class="search-box">
+						<form role="search" class="search-form">
+						<input type="submit" value="" class="search-submit"> 
+						<input type="search" name="q" class="search-text" placeholder="Zoeken..." autocomplete="off">
+						</form>
+					</div>		
+				</div>
+			</div>
+
+			<div class="navigation">
+					<nav>
+						<ul class="main-menu">
+							<li><a href="../index.html">Home</a></li>
+							<li><a class="current" href="../publicaties/publicaties.html">Publicaties</a></li>
+							<li><a href="../index.html#lectoraten">Lectoraten </a></li>
+							<li><a href="../index.html#kenniskringleden">Kenniskringleden</a></li>
+							<li><a href="../contact/contact.html">Contact</a></li>
+						</ul>
+						<ul class="insturen">
+							<li><a href="../insturen/insturen.html">INSTUREN</a></li>
+						</ul>
+					</nav>
+				</div>
+
+
+			<!-- ARTICLE ------------------------------------->
+
+			<div class="article">
+				<div class="box">
+					<div class="content">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="../publicaties/publicaties.html">Publicaties</a></li> &#8250;
+								<li class="current3">Artikel 1</li>
+							</ul>
+						</div>
+						<h1>The patient perspective on the use of information and communication technologies and e-health in rehabilitation</h1>
+
+						<h4>Door: M. M. Wentink, E. Prieto, A. J. de Kloet, T. P. M. Vliet Vlieland & J.J.L. Meesters  |  09 / 04 / 2019</h4></br>
+						<button class="keyword">Gezondheid</button>
+
+						<p><b>Introduction:</b> Success of e-health relies on the extent to which the related technology, such as the electronic device, is accepted by its users. However, there has been limited research on the patients’ perspective on use of e-health-related technology in rehabilitation care.</br></br>
+
+						<b>Objective:</b> To explore the usage of common electronic devices among rehabilitation patients with access to email and investigate their preferences regarding their usage in rehabilitation.</p>
+						
+						<form method="get" action="https://www.tandfonline.com/doi/full/10.1080/17483107.2017.1358302?scroll=top&needAccess=true" target="_blank">
+							 <button type="submit">Link naar volledige publicatie</button>
+
+					</div>
+
+					<div class="back">
+						 <button onclick="goBack()" type="button">&#8592; Terug</button>
+		
+					</div>
+					<div class="photo1">
+						<figure>
+						<img src="photo.jpg"><figcaption class="caption">Flow of patients</figcaption>
+						</figure>
+					</div>
+
+				</div>	
+			</div>
+
+
+
+			<!-- FOOTER ------------------------------------->
+
+				<footer>
+				<div class="footer">
+					<nav>
+						<hr>
+						<ul class="footer-menu">
+							<li><a href="../index.html">Home</a></li>
+							<li><a class="current" href="../publicaties/publicaties.html">Publicaties</a></li>
+							<li><a href="#lectoraten">Lectoraten </a></li>
+							<li><a href="#kenniskringleden">Kenniskringleden</a></li>
+							<li><a href="../contact/contact.html">Contact</a></li>
+						</ul>
+					</nav>
+					<ul class="links">
+							<li class="line"><a href="https://www.dehaagsehogeschool.nl/studievoorzieningen/bibliotheek/zoeken-en-vinden/a-z-databanken-digitale-bronnen" target="_blank">Wetenschappelijke databanken</a></li>
+							<li><a href="https://sts.hhs.nl/adfs/ls/?client-request-id=ea908805-9a0b-423d-847f-8043d2974df0&username=&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=estsredirect%3d2%26estsrequest%3drQIIAeNisDLOKCkpKLbS109JzUhMTC9OzchPTy1OzsjPz9ErzkgsSi3Iz8wr0UvOz9XLL0rPTAGxioS4BFg7JrzinmXr1FLf4Hxpuu-HWYz8QHVFiXmpJXoZGcV6eTmrGLWINlv_AiPjC0bGW0yC_kXpninhxW6pKalFiSWZ-XkXWAResfAYsFpxcHAJcEmwKjD8YGFcxAp0wtntWvsUS_I9ejq2Na3Yxs1wilW_yMgjMLyq3Mkp3cPIJcKrws3fIsyowjTH2cApOCPd16fE2DIwvao4xLI029bUynACm9AENqZTbAwf2Bg72Bl2cWoS7eJbXCJGBoYWuoZGuoaWCoaGVoaWVsbmUQA1" target="_blank">Intranet - De Haagse Hogeschool</a></li>
+						</ul>
+				</div>
+			</footer>
+
+
+			<!-- SCRIPT ------------------------------------->
+
+			 <script>
+		      // Get the modal
+		      var modal = document.getElementById('login');
+
+		      // When the user clicks anywhere outside of the modal, close it
+		      window.onclick = function(event) {
+		          if (event.target == modal) {
+		              modal.style.display = "none";
+		          }
+		      }
+	      	</script>
+
+	      	<script>
+			function goBack() {
+			  window.history.back();
+			}
+			</script>
+
+		</body>
+	</html>

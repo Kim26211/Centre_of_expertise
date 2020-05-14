@@ -1,0 +1,239 @@
+@font-face {
+  font-family: 'Proxima Nova Alt';
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Light.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Regular Italic.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Bold.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Regular.otf');
+ }
+
+
+body{
+	background-color: #F8F7F8;
+}
+
+.publicaties1{
+	background-color: white;
+	padding: 20px;
+	position: relative;
+	display: flex;
+}
+
+.publicaties1 h2{
+	margin: 14px 0px 0px 15px;
+	font-size: 22px;
+	letter-spacing: 0.2px;
+}
+
+.box{
+	left: 5.5%;
+	position: relative;
+	max-width: 89.5%;
+}
+
+/* drop down buttons */
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -30px;
+  margin-right: 5px;
+}
+
+.dropbtn {
+  background-color: white;
+  color: #262C3B;
+  box-shadow: 0px 2px 3px -1px #262C3B;
+  padding: 5px 14px 5px 14px;
+  border-radius: 2px;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  border: none;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #00BEB7}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #F8F7F8;
+}
+
+
+/* publications and articles */
+
+.wrapper {
+  width: 100%;
+  margin-bottom: -32px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.column {
+  display: flex;
+  background-color: #F8F7F8;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 24px 16px 16px 16px;
+  padding: 20px;
+  min-height: 120px;
+  box-shadow: 0px 0px 4px -1px #262C3B;
+  border-radius: 3px;
+}
+
+/* thumbnail styling */
+
+.column p{
+	font-size: 13px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	line-height: 18px;
+	font-weight: lighter;
+}
+
+.column h3{
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 25px;
+}
+
+
+.column .head p{
+	font-size: 14px;
+	display: flex;
+	padding: 2px 0px 15px 0px;
+	letter-spacing: 0.2px;
+} 
+
+.column .date p{
+	font-size: 14px;
+	display: flex;
+	justify-content: flex-end;
+	padding: 0px 0px 20px 0px;
+	margin-top: -32px;
+	letter-spacing: 0.6px;
+} 
+
+.column form button{
+  background-color: #00BEB7;
+  display: table;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 14px 0px 5px 0px;
+  border:none;
+  border-radius: 3px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+
+.column form button:hover{
+  box-shadow: 0px 1px 3px -1px #262C3B;
+  background-color: #05CEC7;
+}
+
+
+/* volgende & vorige buttons */
+
+.publicaties2{
+	background-color: white;
+	display: flex;
+	width: 100%;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.publicaties2 .volgende form button{
+  color: #262C3B;
+  font-size: 14px;
+  margin-bottom: 30px;
+  border:none;
+  margin-right: 94px;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+.publicaties2 .vorige form button{
+  color: #9E9FAD;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  margin-left: 106px;
+  border:none;
+}
+
+.volgende:hover form button{
+	color: #00BEB7;
+	text-decoration: underline;
+}
+
+.publicaties2 .material-icons{
+	vertical-align: -28%;
+}
+
+/* stuur hier jouw artikel in button */
+
+.publicaties3{
+	background-color: #00BEB7;
+	display: flex;
+	align-content: center;
+}
+
+.publicaties3 form button{
+	padding: 20px 35px 20px 35px;
+	letter-spacing: 0.3px;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0px 0px 6px -1px #262C3B;
+	display: flex;
+	margin: 65px auto;
+	position: relative;
+	border-style: solid;
+	border-width: 0.4px;
+	border-color: #262C3B;
+}
+
+.publicaties3 form{
+	margin: auto;
+}
+
+.publicaties3 form button:hover{
+	color: #00BEB7;
+	box-shadow: 0px 1px 8px 0px #262C3B;
+

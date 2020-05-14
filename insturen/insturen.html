@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title>Centre of Expertise</title>
+			<link rel="stylesheet" type="text/css" href="../style_header.css">
+			<link rel="stylesheet" type="text/css" href="../style_navigation.css">
+			<link rel="stylesheet" type="text/css" href="../search_box.css">
+			<link rel="stylesheet" type="text/css" href="../log_in.css">
+			<link rel="stylesheet" type="text/css" href="../footer.css">
+			<link rel="stylesheet" type="text/css" href="style_insturen.css">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		</head>
+		<body>
+
+			<!-- HEADER ------------------------------------->
+
+			<div class="header"> 
+				<div class="inner_header">
+					<div class="logo_left">
+						<img src="../logo.png">
+					</div>
+
+					<div class="logo_right">
+						<a href="https://www.dehaagsehogeschool.nl/onderzoek/onderzoekplatforms" target="_blank"><img src="../logo_HHS.png" alt="De Haagse Hogeschool"></a>
+					</div>
+
+					<div class="login">
+						<button id="header-button" onclick="document.getElementById('login').style.display='block'" style="width:auto;"><i class="material-icons">person</i>LOG IN</button>
+
+					      <div id="login" class="modal">
+					        
+					        <form class="modal-content animate" action="/action_page.php">
+					          <div class="head-container">
+					           <h5>Log in via je intranet account.</br><span class="tekst2">Vul je gegevens hieronder in.</span></h5>
+					           <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+					          </div>
+					          <div class="container">
+					            <label for="uname"><b>GEBRUIKERSNAAM</b></label>
+					            <input class="placeholder" type="text" placeholder="someone@example.com" name="uname" required>
+					            <label for="psw"><b>WACHTWOORD</b></label>
+					            <input class="placeholder" type="password" placeholder="enter your password" name="psw" required>   
+					            <button id="submit" type="submit">LOG IN</button>
+					           <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Annuleren</button>
+					          </div>
+
+					          <div class="container2">
+					            <button type="button" onclick="document.getElementById('beheerder').style.display='block'" class="beheerder">Ik ben beheerder</button>
+					          </div>
+					        </form>
+					      </div>
+					</div>
+
+					<div class="search-box">
+						<form role="search" class="search-form">
+						<input type="submit" value="" class="search-submit"> 
+						<input type="search" name="q" class="search-text" placeholder="Zoeken..." autocomplete="off">
+						</form>
+					</div>		
+				</div>
+			</div>
+
+			<div class="navigation">
+					<nav>
+						<ul class="main-menu">
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../publicaties/publicaties.html">Publicaties</a></li>
+							<li><a href="../index.html#lectoraten">Lectoraten </a></li>
+							<li><a href="../index.html#kenniskringleden">Kenniskringleden</a></li>
+							<li><a href="../contact/contact.html">Contact</a></li>
+						</ul>
+						<ul class="insturen">
+							<li><a class="current2" href="insturen.html">INSTUREN</a></li>
+						</ul>
+					</nav>
+				</div>
+
+
+			<!-- ARTIKEL INSTUREN ------------------------------------->
+
+			<div class="artikel_insturen">
+				<div class="box">
+					<div class="content">
+						<form onsubmit="alert('Artikel succesvol ingestuurd! Het artikel wordt verwerkt door de beheerder.');return false" action="upload.php" method="post" enctype="multipart/form-data">
+							<h1>Artikel Insturen</h1>
+							<label for="title"><b>TITEL</b></label></br>
+					        <input class="field" type="text" placeholder="Naam van het artikel" name="title" required></br>
+
+					        <label for="name"><b>DOOR</b></label></br>
+					        <input class="field" type="text" placeholder="Vul hier je naam in" name="name" required></br>  
+
+					        <label for="keyword"><b>KEYWORDS</b></label></br>
+					        
+					        <div class="keywords">
+					        <input class="items" type="checkbox" name="keyword1">
+					        <label for="keyword">Gezondheid</label>
+					        <input class="items" type="checkbox" name="keyword2">
+					         <label for="keyword">Opvoeding & Onderwijs</label>
+					        <input class="items" type="checkbox" name="keyword3">
+					         <label for="keyword">Mens & Maatschappij</label></br>
+					        <input class="items" type="checkbox" name="keyword4">
+					         <label for="keyword">Revalidatie</label>
+					        <input class="items" type="checkbox" name="keyword5">
+					         <label for="keyword">Economie & Management</label>
+					        <input class="items" type="checkbox" name="keyword6">
+					         <label for="keyword">Tech for Health</label>
+					     </div>
+					    	</br>
+
+					        <label for="omschrijving"><b>KORTE OMSCHRIJVING</b></label></br>
+					        <input id="omschrijving" maxlength="650" class="field2" type="text" placeholder="Geef een korte omschrijving van maximaal 100 woorden" name="omschrijving" required></br>
+					        <label for="fileToUpload"><b>BIJLAGE</b></label></br>
+
+					        <div class="file-input-container">
+					        	<label class="upload" for="file">Upload file..<i class="material-icons">folder</i></label>
+					        <input class="file-input" type="file" id="file" name="file" required></br>
+					    	</div>
+
+					        <input type="submit" id="submit" value="VERSTUUR" name="submit"> 
+						</form>
+					</div>
+
+					<div class="back">
+						 <button onclick="goBack()" type="submit">&#8592; Terug</button>
+		
+					</div>
+					<div class="articlebx">
+						<h3>RECENTE INZENDINGEN:</h3>
+								<ul style="list-style-type:circle;">
+									<li><a href="#">The patient perspective on the use of information and communication technologies and e-health in rehabilitation</a></li>
+									<li><a href="#">Effectiveness of interventions using feedback on objectively measured physical activity</a></li>
+									<li><a href="#">Onderzoeksproject SenseGlove</a></li>
+									<li><a href="#">Verantwoorde innovatie van zorgtechnologie</a></li>
+									<li><a href="#">Samen werken aan innovatieve zorgtechnologie</a></li>
+								</ul>  
+							<form method="get" action="../publicaties/publicaties.html">
+							 <button type="submit">MEER</button>
+							</form>
+					</div>
+
+				</div>
+			</div>
+
+
+			<!-- FOOTER ------------------------------------->
+
+			<footer>
+					<div class="footer">
+						<nav>
+							<hr>
+							<ul class="footer-menu">
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="../publicaties/publicaties.html">Publicaties</a></li>
+								<li><a href="#">Lectoraten </a></li>
+								<li><a href="#">Kenniskringleden</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</nav>
+						<ul class="links">
+								<li class="line"><a href="https://www.dehaagsehogeschool.nl/studievoorzieningen/bibliotheek/zoeken-en-vinden/a-z-databanken-digitale-bronnen" target="_blank">Wetenschappelijke databanken</a></li>
+								<li><a href="https://sts.hhs.nl/adfs/ls/?client-request-id=ea908805-9a0b-423d-847f-8043d2974df0&username=&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=estsredirect%3d2%26estsrequest%3drQIIAeNisDLOKCkpKLbS109JzUhMTC9OzchPTy1OzsjPz9ErzkgsSi3Iz8wr0UvOz9XLL0rPTAGxioS4BFg7JrzinmXr1FLf4Hxpuu-HWYz8QHVFiXmpJXoZGcV6eTmrGLWINlv_AiPjC0bGW0yC_kXpninhxW6pKalFiSWZ-XkXWAResfAYsFpxcHAJcEmwKjD8YGFcxAp0wtntWvsUS_I9ejq2Na3Yxs1wilW_yMgjMLyq3Mkp3cPIJcKrws3fIsyowjTH2cApOCPd16fE2DIwvao4xLI029bUynACm9AENqZTbAwf2Bg72Bl2cWoS7eJbXCJGBoYWuoZGuoaWCoaGVoaWVsbmUQA1" target="_blank">Intranet - De Haagse Hogeschool</a></li>
+							</ul>
+					</div>
+				</footer>
+
+
+			<!-- SCRIPT ------------------------------------->
+
+			 <script>
+		      // Get the modal
+		      var modal = document.getElementById('login');
+
+		      // When the user clicks anywhere outside of the modal, close it
+		      window.onclick = function(event) {
+		          if (event.target == modal) {
+		              modal.style.display = "none";
+		          }
+		      }
+	      	</script>
+
+	      	<script>
+	      	//window.onbeforeunload = function() {
+			   //if (data_needs_saving()) {
+			       //return "Weet je zeker dat je terug wilt? Je ingevulde gegevens zullen verloren gaan.";
+			  // } else {
+			//      return;
+		//	   }
+		//	};
+			</script>
+
+	      	<script>
+			function goBack() {
+			  window.history.back(-2);
+			}
+			</script>
+
+		</body>
+	</html>

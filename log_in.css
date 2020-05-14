@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'Proxima Nova Alt';
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Light.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Regular Italic.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Bold.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Regular.otf');
+ }
+
+
+body {
+  font-family: 'proxima nova alt';
+}
+
+.header .material-icons {
+  vertical-align:-28%;
+  padding-right:6px;
+  margin-left: -8px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+/* Set a style for the log in button */
+
+#header-button  {
+  background-color: #262C3B;
+  color: white;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  float: right;
+  margin-right: 6px;
+  margin-top: 14px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+#header-button:hover {
+  background-color: white;
+  color:#262C3B;
+  border: solid;
+  border-width: 1px;
+  border-color: #262C3B;
+}
+
+/* Styles for the text */
+
+#login {
+  font-family: 'proxima nova alt';
+}
+
+.placeholder {
+  font-style: italic;
+}
+
+label {
+  letter-spacing: 0.3px;
+  font-weight: medium;
+}
+
+h5 {
+  font-size: 19px;
+  font-weight: medium;
+}
+
+.tekst2{
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+/* Extra styles for the other buttons */
+.cancelbtn {
+  width: auto;
+  background-color: nond;
+  padding-left: 50;
+  padding: 13px 5px;
+  border: none;
+  color: #262C3B;
+  text-decoration: underline;
+  float: left;
+}
+
+.cancelbtn:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#submit {
+  width: auto;
+  background-color: #00BEB7;
+  color: white;
+  font-weight: bold;
+  padding: 8px 20px;
+  cursor: pointer;
+  border: none;
+  margin: 6px 5px 12px 0px;
+  float: left;
+  letter-spacing: 0.8px;
+  border-radius: 2px;
+}
+
+#submit:hover{
+  background-color: #DBF4F3;
+  color:#00BEB7;
+
+}
+
+.beheerder {
+  background-color: white;
+  border-style: solid;
+  border-color: #00BEB7;
+  border-width: 1.4px;
+  color: #262C3B;
+  cursor: pointer;
+  width: 100%;
+  float: center;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: lighter;
+  padding: 8px 20px;
+  border-radius: 2px;
+}
+
+.beheerder:hover{
+  color: #00BEB7;
+}
+
+/* Styling of the 3 containers */
+.head-container {
+  text-align: left;
+  margin: 10px 0px 0px 10px;
+  position: relative;
+  padding: 30px 0px 20px 16px;
+}
+
+.container {
+  padding: 0px 25px 50px 25px;
+}
+
+.container2 {
+  padding: 25px;
+  border-top-style: solid;
+  border-top-width: 0.4px;
+  border-top-color: #262C3B;
+}
+
+span.psw {
+  float: right;
+  top: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(146,222,220); /* Fallback color */
+  background-color: rgba(146,222,220,0.9); /* blue w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white;
+  box-shadow: 0px 0px 8px -3px #00BEB7;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 500px; 
+  border-radius: 3px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 10px;
+  top: -8px;
+  color: #000;
+  font-size: 35px;
+  padding-top: 8px;
+  font-weight: lighter;
+}
+
+.close:hover,
+.close:focus {
+  color: #00BEB7;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}

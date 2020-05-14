@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Proxima Nova Alt';
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Light.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Regular Italic.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Bold.otf');
+  src: url('proxima/Mark Simonson - Proxima Nova Alt Regular.otf');
+ }
+
+ 
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'proxima nova alt';
+}
+
+.header {
+	width: 100%;
+	height: 70px;
+	display: block;
+	background-color: white;
+}
+
+.inner_header{
+	width: 85%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo_left{
+	height: 100%;
+	display: flex;
+	float: left;
+	padding-left: 8px;
+}
+
+.logo_left img {
+	height: 65%;
+	padding-top: 12px;
+}
+
+.logo_right {
+	height: 100%;
+	display: table;
+	float: right;
+}
+
+.logo_right img {
+	height: 65%;
+	padding-top: 13px;
+	width: 42px;
+	height: 42px;
+	border: 0;
+	}
+
+
+

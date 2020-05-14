@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title>Centre of Expertise</title>
+			<link rel="stylesheet" type="text/css" href="style_header.css">
+			<link rel="stylesheet" type="text/css" href="style_navigation.css">
+			<link rel="stylesheet" type="text/css" href="search_box.css">
+			<link rel="stylesheet" type="text/css" href="style_home.css">
+			<link rel="stylesheet" type="text/css" href="log_in.css">
+			<link rel="stylesheet" type="text/css" href="tabs.css">
+			<link rel="stylesheet" type="text/css" href="footer.css">
+			<link rel="stylesheet" type="text/css" href="carousel/owl.carousel.min.css">
+			<link rel="stylesheet" type="text/css" href="carousel/owl.theme.default.min.css">
+			<link rel="stylesheet" type="text/css" href="carousel/carousel.css">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		</head>
+		<body>
+
+			<!-- HEADER ------------------------------------->
+
+			<div class="header"> 
+				<div class="inner_header">
+					<div class="logo_left">
+						<img src="logo.png">
+					</div>
+
+					<div class="logo_right">
+						<a href="https://www.dehaagsehogeschool.nl/onderzoek/onderzoekplatforms" target="_blank"><img src="logo_HHS.png" alt="De Haagse Hogeschool"></a>
+					</div>
+
+					<div class="login">
+						<button id="header-button" onclick="document.getElementById('login').style.display='block'" style="width:auto;"><i class="material-icons">person</i>LOG IN</button>
+
+					      <div id="login" class="modal">
+					        
+					        <form class="modal-content animate" action="/action_page.php">
+					          <div class="head-container">
+					           <h5>Log in via je intranet account.</br><span class="tekst2">Vul je gegevens hieronder in.</span></h5>
+					           <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+					          </div>
+					          <div class="container">
+					            <label for="uname"><b>GEBRUIKERSNAAM</b></label>
+					            <input class="placeholder" type="text" placeholder="someone@example.com" name="uname" required>
+					            <label for="psw"><b>WACHTWOORD</b></label>
+					            <input class="placeholder" type="password" placeholder="enter your password" name="psw" required>   
+					            <button id="submit" type="submit">LOG IN</button>
+					           <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Annuleren</button>
+					          </div>
+
+					          <div class="container2">
+					            <button type="button" onclick="document.getElementById('beheerder').style.display='block'" class="beheerder">Ik ben beheerder</button>
+					          </div>
+					        </form>
+					      </div>
+					</div>
+
+					<div class="search-box">
+						<form role="search" class="search-form">
+						<input type="submit" value="" class="search-submit"> 
+						<input type="search" name="q" class="search-text" placeholder="Zoeken..." autocomplete="off">
+						</form>
+					</div>		
+				</div>
+			</div>
+
+			<div class="navigation">
+					<nav>
+						<ul class="main-menu">
+							<li><a class="current" href="centre_of_expertise.html">Home</a></li>
+							<li><a href="publicaties/publicaties.html">Publicaties</a></li>
+							<li><a href="#lectoraten">Lectoraten </a></li>
+							<li><a href="#kenniskringleden">Kenniskringleden</a></li>
+							<li><a href="contact/contact.html">Contact</a></li>
+						</ul>
+						<ul class="insturen">
+							<li><a href="insturen/insturen.html">INSTUREN</a></li>
+						</ul>
+					</nav>
+				</div>
+
+
+			<!-- HOME --------------------------------->
+
+			<div id="home1" class="home1">
+				<div class="box">
+					<div class="content">
+						<h1>Kwaliteit van het Leven: <span class="span">
+						</br>Mens en Technologie </span></h1>
+
+						<p id="intro"> Binnen het onderzoeksthema ‘Kwaliteit van Leven: Mens en Technologie’ werken vier faculteiten en meerdere lectoren samen aan een centrale onderzoeksvraag: hoe kunnen we de kwaliteit van leven van mensen bevorderen door mens, omgeving en technologie te verbinden?
+						Het onderzoek richt zich op twee thema’s:</p>
+
+						<h2>1. Vitaliteit</h2>
+
+						<p>Dit onderzoeksprogramma is gericht op het bevorderen van een gezonde leefstijl en de vitaliteit van burgers in de Delta regio. Innovatie en technologie spelen een belangrijke rol binnen het onderzoekprogramma.</p>
+
+						<h2>2. Zorg & Revalidatie</h2>
+
+						<p>Dit onderzoeksprogramma is gericht op het zo goed mogelijk ondersteunen van mensen met een zorgbehoefte. De eigen leefsituatie staat centraal, uitgaande van menselijke waarden en sociaal-technologische innovaties. Doel is om de kwaliteit van leven te waarborgen met een zo hoog mogelijke sociaal-maatschappelijke participatie.</p>
+					</div>
+					<div class="recentbx">
+						<h3>RECENTE PUBLICATIES:</h3>
+							<ul style="list-style-type:circle;">
+								<li><a href="#">The patient perspective on the use of information and communication technologies and e-health in rehabilitation</a></li>
+								<li><a href="#">Effectiveness of interventions using feedback on objectively measured physical activity</a></li>
+								<li><a href="#">Onderzoeksproject SenseGlove</a></li>
+								<li><a href="#">Verantwoorde innovatie van zorgtechnologie</a></li>
+								<li><a href="#">Samen werken aan innovatieve zorgtechnologie</a></li>
+							</ul>  
+							<form method="get" action="publicaties/publicaties.html">
+							 <button type="submit">MEER</button>
+							</form>
+					</div>
+				</div>	
+			</div>
+
+			<div id="lectoraten" class="home2">
+				<div class="tabs">	
+					<div class="tab">
+				       <input type="radio" id="tab-1" name="tab-group-1" checked>
+				       <label for="tab-1">REVALIDATIE</label>
+				       <div class="content">
+							<p class="intro">Het lectoraat Revalidatie is gericht op het bevorderen van participatie en kwaliteit van leven van mensen met een lichamelijke beperking of chronische aandoening . Het lectoraat is gestart in samenwerking met Sophia Revalidatie. Het doet onderzoek en start innovatieve projecten op het gebied van participatie en kwaliteit van leven. Participatie, (aangepast) bewegen en sporten en e-revalidatie zijn hierbij drie belangrijke, samenhangende onderzoekslijnen.</p>
+							<h2>Over dit lectoraat</h2>
+							<p>In principe richt het lectoraat zich op alle revalidatiedoelgroepen, maar bij het deelgebied ‘participatie’ ligt de focus op kinderen en jongeren met niet-aangeboren hersenletsel (NAH). Zij worden zelf ook nadrukkelijk betrokken bij het bedenken en uitvoeren van activiteiten.
+
+							Het lectoraat wil met onderzoek, innovatie en kenniscirculatie bijdragen aan gerichte verbeteringen en veranderingen in het zorgaanbod en beroepsopleidingen. Het brengt revalidatie onder de aandacht van hbo-studenten en is uitgegroeid tot een regionaal kennis- en expertisecentrum met landelijke en internationale partners.</p></br>
+							<blockquote>"Niet-aangeboren hersenletsel verdient meer aandacht: in de zorg, het beroepsonderwijs en de maatschappij in brede zin."
+							</blockquote>
+							<form method="get" action="publicaties/publicaties.html">
+							 <button type="submit">Bekijk publicaties</button>
+							</form>
+				       </div> 
+				   </div>
+				   <div class="tab">
+				       <input type="radio" id="tab-2" name="tab-group-1">
+				       <label for="tab-2">TECH FOR HEALTH</label>
+				       
+				       <div class="content">
+				           <p class="intro">Een lang en gezond leven is wat we elkaar het liefst toewensen. En dankzij meer geneeskundige kennis en een hogere stand van de medische techniek blijft de gemiddelde levensverwachting stijgen. Toch leiden al die technologische mogelijkheden niet automatisch tot een betere kwaliteit van leven. Een sterke sociale cohesie is net zo belangrijk. Technologie moet in dienst staan van de patiënt en intermenselijk contact bevorderen. Of het nu gaat om zorgrobots, 3D-printing, domotica of andere hulpmiddelen.</p>
+				           <h2>Over dit lectoraat</h2>
+				           <p>Het lectoraat ontwikkelt nieuwe technologie voor toepassing in de medische en gezondheidssector.</br><span>Medical delta</span></br>
+				           Voor de uitvoering van het onderzoek en ontwikkeling wordt samengewerkt met partnerinstellingen en bedrijven uit de Medical Delta regio (Leiden-Delft-Rotterdam): TU Delft, LUMC, Erasmus MC, Sophia Revalidatie, Pieter van Foreest, Parnassia, Intespring, AdjuvoMotion, Robot Care Systems, RD Mobility, Totem Open Health, Westland Orthopedie, OIM, Ordina en nog vele anderen.</p></br><blockquote>"We ontwikkelen onder andere hulpmiddelen die de mobiliteit van patiënten verhogen, zoals exoskeletten waarmee dwarslaesiepatiënten weer kunnen lopen."
+							</blockquote>
+							<form method="get" action="publicaties/publicaties.html">
+							 <button type="submit">Bekijk publicaties</button>
+							</form>
+				       </div> 
+				   </div>
+				 </div> 
+			</div>
+
+			<div id="kenniskringleden" class="gallery"><h3>KENNISKRINGLEDEN</h3></div>
+			<div class="home3">
+				<div class="wrapper">
+					<div class="owl-carousel owl-theme">
+					    <div class="item"><img src="leden/hans-glerum.jpg"><h4>Hans Glerum</h4></div>
+					    <div class="item"><img src="leden/arjan-lock.jpg"><h4>Arjan Lock</h4></div>
+					    <div class="item"><img src="leden/mark-leemhuis.jpg"><h4>Mark Leemhuis</h4></div>
+					    <div class="item"><img src="leden/mirjam-zijderveld.jpg"><h4>Mirjam Zijderveld</h4></div>
+					    <div class="item"><img src="leden/martijn-ent.jpg"><h4>Martijn van der Ent</h4></div>
+					    <div class="item"><img src="leden/arent-de-kloet.jpg"><h4>Arent de Kloet</h4></div>
+					    <div class="item"><img src="leden/bram-reurings.jpg"><h4>Bram Reurings</h4></div>
+					    <div class="item"><img src="leden/meralda-slager.jpg"><h4>Meralda Slager</h4></div>
+					    <div class="item"><img src="leden/erwin-de-vlugt.jpg"><h4>Erwin de Vlugt</h4></div>
+					    <div class="item"><img src="leden/jorrit-meesters.jpg"><h4>Jorrit Meesters</h4></div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- FOOTER -------------------------------------------->
+
+			<footer>
+				<div class="footer">
+					<nav>
+						<hr>
+						<ul class="footer-menu">
+							<li><a class="current" href="centre_of_expertise.html">Home</a></li>
+							<li><a href="publicaties/publicaties.html">Publicaties</a></li>
+							<li><a href="#">Lectoraten </a></li>
+							<li><a href="#">Kenniskringleden</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+					<ul class="links">
+							<li class="line"><a href="https://www.dehaagsehogeschool.nl/studievoorzieningen/bibliotheek/zoeken-en-vinden/a-z-databanken-digitale-bronnen" target="_blank">Wetenschappelijke databanken</a></li>
+							<li><a href="https://sts.hhs.nl/adfs/ls/?client-request-id=ea908805-9a0b-423d-847f-8043d2974df0&username=&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=estsredirect%3d2%26estsrequest%3drQIIAeNisDLOKCkpKLbS109JzUhMTC9OzchPTy1OzsjPz9ErzkgsSi3Iz8wr0UvOz9XLL0rPTAGxioS4BFg7JrzinmXr1FLf4Hxpuu-HWYz8QHVFiXmpJXoZGcV6eTmrGLWINlv_AiPjC0bGW0yC_kXpninhxW6pKalFiSWZ-XkXWAResfAYsFpxcHAJcEmwKjD8YGFcxAp0wtntWvsUS_I9ejq2Na3Yxs1wilW_yMgjMLyq3Mkp3cPIJcKrws3fIsyowjTH2cApOCPd16fE2DIwvao4xLI029bUynACm9AENqZTbAwf2Bg72Bl2cWoS7eJbXCJGBoYWuoZGuoaWCoaGVoaWVsbmUQA1" target="_blank">Intranet - De Haagse Hogeschool</a></li>
+						</ul>
+				</div>
+			</footer>
+
+
+			<!-- SCRIPT ---------------------------------------------->
+
+			 <script>
+		      // Get the modal
+		      var modal = document.getElementById('login');
+
+		      // When the user clicks anywhere outside of the modal, close it
+		      window.onclick = function(event) {
+		          if (event.target == modal) {
+		              modal.style.display = "none";
+		          }
+		      }
+	      	</script>
+	      	<script src="carousel/jQuery v3.4.0.js"></script>
+			<script src="carousel/owl.carousel.min.js"></script>
+			<script src="carousel/jquery.js"></script>
+
+		</body>
+	</html>

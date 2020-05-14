@@ -1,0 +1,134 @@
+.home2{
+  padding:20px;
+  background-color: white;
+  display: flex;
+  max-width: 100%;
+  font-size: 15px;
+  line-height: 26px;
+  margin-top: -52px;
+}
+
+/* styling tabs */
+
+.tabs {
+  position: relative;  
+  display: flex; 
+  min-height: 560px; 
+  min-width: 85%;
+  left: 7%;
+}
+
+.tabs .content{
+  padding-right: 35px;
+}
+
+.tab span{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.tab {
+  float: left;
+}
+.tab label {
+  background: #262C3B; 
+  color: white;
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+
+
+.tab [type=radio] {
+  display: none;   
+}
+
+.tab .content {
+  position: absolute;
+  top: 60px;
+  left: -1.6%;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+  border: none;
+  max-width: 100%;
+}
+
+[type=radio]:checked ~ label {
+  background: white;
+  color: #262C3B;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+/* font styles */
+
+.tab h2{
+  padding-bottom: 16px;
+  font-weight: normal;
+}
+
+.tab h3{
+  padding-bottom: 16px;
+  padding-top: 16px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.tab .intro{
+  font-weight: lighter;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.tab blockquote{
+  font-size: 16px;
+  font-style: italic;
+}
+
+label{
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  font-weight: bold;
+}
+
+
+/* button */
+
+.tab form button{
+  background-color: #262C3B;
+  display: table;
+  color: white;
+  padding: 8px 20px;
+  margin: 30px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  border-radius: 3px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+
+.tab form button:hover{
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #00BEB7;
+  color: #262C3B;
+  font-weight: bold;
+}
+
+
+
+
+
+
